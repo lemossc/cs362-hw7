@@ -10,6 +10,9 @@ def fizz_buzz():
         else:
             result[number - 1] = number
 
+    # Print values
     for item in result:
         print(item)
+
+    # Return values for testing purposes
     return result
