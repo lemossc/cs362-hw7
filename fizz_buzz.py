@@ -7,6 +7,8 @@ def fizz_buzz():
             result[number - 1] = "Fizz"
         elif number % 5 == 0:
             result[number - 1] = "Buzz"
+        else:
+            result[number - 1] = number
 
     print(result)
     return result
