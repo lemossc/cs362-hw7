@@ -15,6 +15,14 @@ class TestLeapYear(unittest.TestCase):
         result = leap_year.is_leap_year(2100)
         self.assertEqual(result, False)
 
+    def test_invalid_input(self):
+        result = leap_year.is_leap_year(-1)
+        self.assertEqual(result, None)
+        result = leap_year.is_leap_year("string")
+        self.assertEqual(result, None)
+        result = leap_year.is_leap_year(2000.5)
+        self.assertEqual(result, None)
+
 
 if __name__ == "__main__":
     unittest.main()
